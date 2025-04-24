@@ -1,7 +1,12 @@
+import CsvUploader from '@/components/CsvUploader';
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Utilities Dashboard</h1>
-    </div>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm">
+        <h1 className="text-4xl font-bold mb-8 text-center">Utilities Dashboard</h1>
+        <CsvUploader />
+      </div>
+    </main>
   );
 }
